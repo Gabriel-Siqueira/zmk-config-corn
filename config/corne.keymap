@@ -62,7 +62,7 @@ keymap {
   default_layer {
   bindings = <
   &kp C_VOL_UP    &kp SQT  &kp COMMA &kp DOT &kp P &kp Y   &kp F    &kp G &kp C     &kp R   &kp L &kp C_BRI_UP
-  &kp C_VOL_DN ML(A,       ,O        ,E      ,U  ) &kp I   &kp D MR(H,    ,T        ,N      ,S)   &kp C_BRI_DN
+  &kp C_VOL_DN ML(A,       ,O        ,E      ,U)   &kp I   &kp D MR(H,    ,T        ,N      ,S)   &kp C_BRI_DN
   &kp C_MUTE      &kp NUBS &kp Q     &kp J   &kp K &kp X   &kp B    &kp M &kp W     &kp V   &kp Z &kp C_PP
          &lt LMISC CAPS   &lt LNAV SPACE   &lt LSYM2 TAB   &lt LSYM1 RET   &lt LNUM BSPC   &lt LFUN DEL
   >;
