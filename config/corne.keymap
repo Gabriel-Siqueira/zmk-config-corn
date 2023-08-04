@@ -8,8 +8,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define ML(k1,k2,k3,k4) &lh_pht LGUI   k1  &lh_pht LALT  k2  &lh_pht LCTRL k3  &lh_pht LSHIFT k4
-#define MR(k1,k2,k3,k4) &rh_pht RSHIFT k1  &rh_pht RCTRL k2  &rh_pht RALT  k3  &rh_pht RGUI   k4
+#define ML(k1,k2,k3,k4) &lh_pht LGUI   k1  &lh_pht LALT  k2  &lh_pht LCTRL k3  &lhs_pht LSHIFT k4
+#define MR(k1,k2,k3,k4) &rhs_pht RSHIFT k1  &rh_pht RCTRL k2  &rh_pht RALT  k3  &rh_pht RGUI   k4
 #define LSYM1  1
 #define LSYM2  2
 #define LNUM   3
