@@ -92,7 +92,7 @@ keymap {
   sym2_layer {
   bindings = <
   &none &none    &none    &none     &none      &none    &kp PIPE  &kp AMPS  &kp HASH  &kp AT  &kp DLLR &none
-  &none &kp LGUI &kp LALT &kp LCTRL &pk LSHIFT &none    &kp FSLH  &kp LPAR  &kp RPAR  &kp LT  &kp GT   &none
+  &none &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none    &kp FSLH  &kp LPAR  &kp RPAR  &kp LT  &kp GT   &none
   &none &none    &none    &none     &none      &none    &kp STAR  &kp PRCNT &kp COMMA &kp DOT &kp SEMI &none
                                    &none &none &none    &kp RET   &kp BSPC  &kp DEL
   >;
@@ -137,7 +137,7 @@ keymap {
   nav_layer {
   bindings = <
   &none &none    &none    &none     &none      &none     &kp K_APP &none     &none     &none     &kp ESC &none
-  &none &kp LGUI &kp LALT &kp LCTRL &pk LSHIFT &none     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none   &none
+  &none &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none   &none
   &none &none    &none    &none     &none      &none     &kp HOME  &kp PG_UP &kp PG_DN &kp END   &kp INS &none
                                    &none &none &none     &kp RET   &kp BSPC  &kp DEL
   >;
@@ -152,7 +152,7 @@ keymap {
   misc_layer {
   bindings = <
   &none &none    &none    &none     &none      &none     &none         &none         &none         &none      &none         &none
-  &none &kp LGUI &kp LALT &kp LCTRL &pk LSHIFT &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+  &none &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
   &none &none    &none    &none     &none      &none     &none         &none         &none         &none      &none         &none
                           &none     &none      &none     &kp RET    &kp BSPC     &kp DEL
   >;
