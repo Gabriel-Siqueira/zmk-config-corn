@@ -121,7 +121,7 @@ keymap {
 // -----------------------------------------------------------------------------------------
   fun_layer {
   bindings = <
-  &none &kp F10  &kp F1  &kp F2  &kp F3   &kp PSCRN     &none  &none  &none  &none  &none &none
+  &bootloader &kp F10  &kp F1  &kp F2  &kp F3   &kp PSCRN     &none  &none  &none  &none  &none &bootloader
   &none &kp F11  &kp F4  &kp F5  &kp F6   &none         &none  &kp RSHIFT &kp RCTRL &kp RALT  &kp RGUI &none
   &none &kp F12  &kp F7  &kp F8  &kp F9   &none         &none  &none  &none  &none  &none &none
                    &kp CAPS   &kp SPACE   &kp TAB       &none  &none  &none
@@ -151,7 +151,7 @@ keymap {
 // -----------------------------------------------------------------------------------------
   misc_layer {
   bindings = <
-  &none &none    &none    &none     &none      &none     &none         &none         &none         &none      &none         &none
+  &bootloader &none    &none    &none     &none      &none     &none         &none         &none         &none      &none         &bootloader
   &none &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
   &none &none    &none    &none     &none      &none     &none         &none         &none         &none      &none         &none
                           &none     &none      &none     &kp RET    &kp BSPC     &kp DEL
