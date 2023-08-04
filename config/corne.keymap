@@ -24,7 +24,7 @@ behaviors {
     label = "LEFT_SHIFT_POSITIONAL_HOLD_TAP";
     #binding-cells = <2>;
     flavor = "balanced";
-    tapping-term-ms = <50>;
+    tapping-term-ms = <150>;
     quick-tap-ms = <0>;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions =         // <---[[right-hand keys]]
@@ -39,7 +39,7 @@ behaviors {
     label = "RIGHT_SHIFT_POSITIONAL_HOLD_TAP";
     #binding-cells = <2>;
     flavor = "balanced";
-    tapping-term-ms = <50>;
+    tapping-term-ms = <150>;
     quick-tap-ms = <0>;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions =         // <---[[left-hand keys]]
