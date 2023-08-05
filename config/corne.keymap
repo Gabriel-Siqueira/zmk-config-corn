@@ -146,7 +146,7 @@ keymap {
 // --   XX     XX     XX      XX       XX      prtsc f1    f2   f3    f10   --
 // esc  win    alt    ctrl    shift    XX      -     f4    f5   f6    f11   --
 // --   XX     XX     XX      XX       XX      *     f7    f8   f9    f12   --
-/     /               XX      XX       XX      enter bksp  del
+//                    XX      XX       XX      enter bksp  del
 // ----------------------------------------------------------------------------------------
   fun_layer {
   bindings = <
