@@ -82,102 +82,102 @@ behaviors {
 keymap {
   compatible = "zmk,keymap";
 
-// -----------------------------------------------------------------------------------------
-// vol_up  '      ,      .       p         y         f    g        c       r      l      bri_up
-// vol_dn  a(win) o(alt) e(ctrl) u(shift)  i         d    h(shift) t(ctrl) n(alt) s(win) bri_dn
-// mute    102    q      j       k         x         b    m        w       v      z      play_pause
-//                       esc     spc     tab         enter        bksp        del
-// -----------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------
+// --               '      ,      .       p         y         f    g        c       r      l      vol_up  
+// esc(fun)         a(win) o(alt) e(ctrl) u(shift)  i         d    h(shift) t(ctrl) n(alt) s(win) vol_dn
+// play/pause(misc) 102    q      j       k         x         b    m        w       v      z      mute
+//                     tab(sym2)  spc(num)  --         enter    bksp(nav)   del(sym1)
+// ----------------------------------------------------------------------------------------
   default_layer {
   bindings = <
-  &kp C_VOL_UP    &kp SQT  &kp COMMA &kp DOT &kp P &kp Y   &kp F    &kp G &kp C &kp R   &kp L &kp C_BRI_UP
-  &kp C_VOL_DN ML(A,       O,        E,      U)    &kp I   &kp D MR(H,    T,    N,      S)    &kp C_BRI_DN
-  &kp C_MUTE      &kp NUBS &kp Q     &kp J   &kp K &kp X   &kp B    &kp M &kp W &kp V   &kp Z &kp C_PP
-         &lt LMISC CAPS   &lt LNAV SPACE   &lt LSYM2 TAB   &lt LSYM1 RET   &lt LNUM BSPC   &lt LFUN DEL
+  &none            &kp SQT  &kp COMMA &kp DOT &kp P &kp Y   &kp F    &kp G &kp C &kp R   &kp L &kp C_VOL_UP
+  &lt LFUN CAPS ML(A,       O,        E,      U)    &kp I   &kp D MR(H,    T,    N,      S)    &kp C_VOL_DN 
+  &lt C_PP LMISC   &kp NUBS &kp Q     &kp J   &kp K &kp X   &kp B    &kp M &kp W &kp V   &kp Z &kp C_MUTE
+                   &lt LSYM2 TAB   &lt LNUM SPACE   &none   &kp RET  &lt LNAV BSPC   &lt LSYM1 DEL
   >;
   };
 
-// -----------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------
 // --   "    '    `    ^    ~         XX   XX    XX    XX    XX   --
-// --   [    ]    {    }    \         XX   shift ctrl  alt   win  --
+// esc  [    ]    {    }    \         XX   shift ctrl  alt   win  --
 // --   :    !    ?    _    -         XX   XX    XX    XX    XX   --
-//           esc    spc    tab        XX   XX    XX
-// -----------------------------------------------------------------------------------------
+//            tab    spc    --        XX   XX    XX
+// ----------------------------------------------------------------------------------------
   sym1_layer {
   bindings = <
-  &none &kp DQT   &kp SQT   &kp GRAVE  &kp CARET  &kp TILDE      &none  &none  &none  &none  &none &none
-  &none &kp LBKT  &kp RBKT  &kp LBRC   &kp RBRC   &kp BSLH       &none  &kp RSHIFT &kp RCTRL &kp RALT  &kp RGUI &none
-  &none &kp COLON &kp EXCL  &kp QMARK  &kp UNDER  &kp MINUS      &none  &none  &none  &none  &none &none
-                          &kp CAPS     &kp SPACE     &kp TAB     &none  &none  &none
+  &none    &kp DQT   &kp SQT   &kp GRAVE  &kp CARET  &kp TILDE      &none  &none  &none  &none  &none &none
+  &kp CAPS &kp LBKT  &kp RBKT  &kp LBRC   &kp RBRC   &kp BSLH       &none  &kp RSHIFT &kp RCTRL &kp RALT  &kp RGUI &none
+  &none    &kp COLON &kp EXCL  &kp QMARK  &kp UNDER  &kp MINUS      &none  &none  &none  &none  &none &none
+                               &kp TAB    &kp SPACE      &none      &none  &none  &none
   >;
   };
 
-// -----------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------
 // --   XX    XX    XX    XX    XX        |    &    #    @    $   --
-// --   win   alt   ctrl  shift XX        /    (    )    <    >   --
+// esc  win   alt   ctrl  shift XX        /    (    )    <    >   --
 // --   XX    XX    XX    XX    XX        *    %    ,    .    ;   --
 //                  XX    XX    XX        enter  bksp  del
-// -----------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------
   sym2_layer {
   bindings = <
-  &none &none    &none    &none     &none      &none    &kp PIPE  &kp AMPS  &kp HASH  &kp AT  &kp DLLR &none
-  &none &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none    &kp FSLH  &kp LPAR  &kp RPAR  &kp LT  &kp GT   &none
-  &none &none    &none    &none     &none      &none    &kp STAR  &kp PRCNT &kp COMMA &kp DOT &kp SEMI &none
-                                   &none &none &none    &kp RET   &kp BSPC  &kp DEL
+  &none    &none    &none    &none     &none      &none    &kp PIPE  &kp AMPS  &kp HASH  &kp AT  &kp DLLR &none
+  &kp CAPS &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none    &kp FSLH  &kp LPAR  &kp RPAR  &kp LT  &kp GT   &none
+  &none    &none    &none    &none     &none      &none    &kp STAR  &kp PRCNT &kp COMMA &kp DOT &kp SEMI &none
+                                      &none &none &none    &kp RET   &kp BSPC  &kp DEL
   >;
   };
 
-// -----------------------------------------------------------------------------------------
-// --   +    1    2    3    %         XX   XX    XX    XX    XX   --
-// --   -    4    5    6    =         XX   shift ctrl  alt   win  --
-// --   *    7    8    9    \         XX   XX    XX    XX    XX   --
-//                .    0    ,         XX   XX    XX
-// -----------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------
+// --   XX     XX     XX      XX       XX         +     1     2    3    %   bri_up
+// esc  win    alt    ctrl    shift    XX         -     4     5    6    =   bri_dn
+// --   XX     XX     XX      XX       XX         *     7     8    9    \   --
+//                    XX      XX       XX         .     0     ,
+// ----------------------------------------------------------------------------------------
   num_layer {
   bindings = <
-  &none &kp PLUS   &kp N1  &kp N2  &kp N3  &kp PRCNT      &none  &none  &none  &none  &none &none
-  &none &kp MINUS  &kp N4  &kp N5  &kp N6  &kp EQUAL      &none  &kp RSHIFT &kp RCTRL &kp RALT  &kp RGUI &none
-  &none &kp STAR   &kp N7  &kp N8  &kp N9  &kp BSLH       &none  &none  &none  &none  &none &none
-                           &kp DOT &kp N0  &kp COMMA      &none  &none  &none
+  &none    &none    &none     &none     &none      &none    &kp PLUS   &kp N1  &kp N2  &kp N3  &kp PRCNT &none
+  &kp CAPS &kp LGUI &kp LCTRL &kp LALT  &kp LSHIFT &none    &kp MINUS  &kp N4  &kp N5  &kp N6   &kp EQUAL &none
+  &none    &none    &none     &none     &none      &none    &kp STAR   &kp N7  &kp N8  &kp N9  &kp BSLH  &none
+                                     &none  &none  &none    &kp DOT &kp N0  &kp COMMA
   >;
   };
 
-// -----------------------------------------------------------------------------------------
-// --   f10   f1   f2   f3    prtsc      XX   XX    XX    XX    XX   --
-// --   f11   f4   f5   f6       XX      XX   shift ctrl  alt   win  --
-// --   f12   f7   f8   f9       XX      XX   XX    XX    XX    XX   --
-//                esc    spc    tab      XX   XX    XX
-// -----------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------
+// --   XX     XX     XX      XX       XX      prtsc f1    f2   f3    f10   --
+// esc  win    alt    ctrl    shift    XX      -     f4    f5   f6    f11   --
+// --   XX     XX     XX      XX       XX      *     f7    f8   f9    f12   --
+/     /               XX      XX       XX      enter bksp  del
+// ----------------------------------------------------------------------------------------
   fun_layer {
   bindings = <
-  &bootloader &kp F10  &kp F1  &kp F2  &kp F3   &kp PSCRN     &none  &none  &none  &none  &none &bootloader
-  &none &kp F11  &kp F4  &kp F5  &kp F6   &none         &none  &kp RSHIFT &kp RCTRL &kp RALT  &kp RGUI &none
-  &none &kp F12  &kp F7  &kp F8  &kp F9   &none         &none  &none  &none  &none  &none &none
-                   &kp CAPS   &kp SPACE   &kp TAB       &none  &none  &none
+  &none    &none    &none     &none     &none      &none    &kp PSCRN &kp F1  &kp F2  &kp F3  &kp F10  &none
+  &kp CAPS &kp LGUI &kp LCTRL &kp LALT  &kp LSHIFT &none    &none     &kp F4  &kp F5  &kp F6  &kp 011  &none
+  &none    &none    &none     &none     &none      &none    &none     &kp F7  &kp F8  &kp F9  &kp F12  &none
+                                       &none &none &none    &kp RET   &kp BSPC  &kp DEL
   >;
   };
 
-// -----------------------------------------------------------------------------------------
-// --   XX    XX    XX    XX    XX        app   XX   XX   XX   caps --
-// --   win   alt   ctrl  shift XX        <-    v    ^    ->   XX   --
-// --   XX    XX    XX    XX    XX        home  pgdn pgup end  ins  --
-//                  XX    XX    XX        enter bksp  del
-// -----------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------
+// --   caps   home  ^   end  pup         XX   XX    XX    XX    XX   -- 
+// --   XX     <-    v   ->   pdown       XX   shift ctrl  alt   win  -- 
+// --   app    XX    XX  XX   ins         XX   XX    XX    XX    XX   --
+//                   tab spc  --          XX   XX    XX
+// ----------------------------------------------------------------------------------------
   nav_layer {
   bindings = <
-  &none &none    &none    &none     &none      &none     &kp K_APP &none     &none     &none     &kp ESC &none
-  &none &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none   &none
-  &none &none    &none    &none     &none      &none     &kp HOME  &kp PG_UP &kp PG_DN &kp END   &kp INS &none
-                                   &none &none &none     &kp RET   &kp BSPC  &kp DEL
+  &none  &kp ESC   &kp HOME &kp UP   &kp END   &kp PG_UP      &none  &none  &none  &none  &none &none
+  &none  &none     &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN      &none  &kp RSHIFT &kp RCTRL &kp RALT  &kp RGUI &none
+  &none  &kp K_APP &none    &none    &none     &kp INS        &none  &none  &none  &none  &none &none
+                            &kp TAB  &kp SPACE &none          &none  &none  &none
   >;
   };
 
-// -----------------------------------------------------------------------------------------
-// --   XX    XX    XX    XX    XX        XX   XX    XX    XX   XX   --
-// --   win   alt   ctrl  shift XX        XX   XX    XX    XX   XX   --
+// ----------------------------------------------------------------------------------------
+// boot XX    XX    XX    XX    XX        XX   XX    XX    XX   XX   boot
+// --   win   alt   ctrl  shift XX        bt0  bt1   bt2   bt3  bt4  bclr
 // --   XX    XX    XX    XX    XX        XX   XX    XX    XX   XX   --
 //                  XX    XX    XX        enter bksp  del
-// -----------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------
   misc_layer {
   bindings = <
   &bootloader &none    &none    &none     &none      &none     &none         &none         &none         &none      &none         &bootloader
