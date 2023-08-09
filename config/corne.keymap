@@ -107,7 +107,7 @@ keymap {
   bindings = <
   &none    &kp DQT   &kp SQT   &kp GRAVE  &kp CARET  &kp TILDE      &none  &none  &none  &none  &none &none
   &kp CAPS &kp LBKT  &kp RBKT  &kp LBRC   &kp RBRC   &kp FSLH       &none  &kp RSHIFT &kp RCTRL &kp RALT  &kp RGUI &none
-  &none    &kp EXCL  &kp QMARK &kp SEMI   &kp QCOLON &kp UNDER      &none  &none  &none  &none  &none &none
+  &none    &kp EXCL  &kp QMARK &kp SEMI   &kp COLON &kp UNDER       &none  &none  &none  &none  &none &none
                                &kp CAPS   &kp DEL        &none      &none  &none  &none
   >;
   };
