@@ -135,8 +135,8 @@ keymap {
 // ----------------------------------------------------------------------------------------
   num_layer {
   bindings = <
-  &none    &none    &none     &none     &none      &none    &kp PLUS   &kp N1  &kp N2  &kp N3  &kp STAR &C_BRI_UP
-  &kp CAPS &kp LGUI &kp LCTRL &kp LALT  &kp LSHIFT &none    &kp BSLH   &kp N4  &kp N5  &kp N6  &kp EQUAL &C_BRI_DN
+  &none    &none    &none     &none     &none      &none    &kp PLUS   &kp N1  &kp N2  &kp N3  &kp STAR &kp C_BRI_UP
+  &kp CAPS &kp LGUI &kp LCTRL &kp LALT  &kp LSHIFT &none    &kp BSLH   &kp N4  &kp N5  &kp N6  &kp EQUAL &kp C_BRI_DN
   &none    &none    &none     &none     &none      &none    &kp MINUS  &kp N7  &kp N8  &kp N9  &kp PRCNT &none
                                      &none  &none  &none    &kp DOT &kp N0  &kp COMMA
   >;
