@@ -92,7 +92,7 @@ keymap {
   bindings = <
   &none            &kp SQT  &kp COMMA &kp DOT &kp P &kp Y   &kp F    &kp G &kp C &kp R   &kp L &kp C_VOL_UP
   &lt LFUN CAPS ML(A,       O,        E,      U)    &kp I   &kp D MR(H,    T,    N,      S)    &kp C_VOL_DN 
-  &lt LMISC C_PP   &kp NUBS &kp Q     &kp J   &kp K &kp X   &kp B    &kp M &kp W &kp V   &kp Z &kp C_MUTE
+  &lt LMISC C_PP   &kp RALT &kp Q     &kp J   &kp K &kp X   &kp B    &kp M &kp W &kp V   &kp Z &kp C_MUTE
                    &lt LSYM2 CAPS  &lt LNUM BSPC    &none   &kp RET  &lt LNAV SPACE   &lt LSYM1 TAB
   >;
   };
@@ -136,7 +136,7 @@ keymap {
   num_layer {
   bindings = <
   &none    &none    &none     &none     &none      &none    &kp PLUS   &kp N1  &kp N2  &kp N3  &kp STAR &kp C_BRI_UP
-  &kp CAPS &kp LGUI &kp LCTRL &kp LALT  &kp LSHIFT &none    &kp BSLH   &kp N4  &kp N5  &kp N6  &kp EQUAL &kp C_BRI_DN
+  &kp CAPS &kp LGUI &kp LALT  &kp LCTRL &kp LSHIFT &none    &kp BSLH   &kp N4  &kp N5  &kp N6  &kp EQUAL &kp C_BRI_DN
   &none    &none    &none     &none     &none      &none    &kp MINUS  &kp N7  &kp N8  &kp N9  &kp PRCNT &none
                                      &none  &none  &none    &kp DOT &kp N0  &kp COMMA
   >;
@@ -151,7 +151,7 @@ keymap {
   fun_layer {
   bindings = <
   &none    &none    &none     &none     &none      &none    &kp PSCRN &kp F1  &kp F2  &kp F3  &kp F10  &none
-  &kp CAPS &kp LGUI &kp LCTRL &kp LALT  &kp LSHIFT &none    &none     &kp F4  &kp F5  &kp F6  &kp 011  &none
+  &kp CAPS &kp LGUI &kp LALT  &kp LCTRL &kp LSHIFT &none    &none     &kp F4  &kp F5  &kp F6  &kp 011  &none
   &none    &none    &none     &none     &none      &none    &none     &kp F7  &kp F8  &kp F9  &kp F12  &none
                                        &none &none &none    &kp RET   &kp SPACE  &kp TAB
   >;
@@ -165,7 +165,7 @@ keymap {
 // ----------------------------------------------------------------------------------------
   nav_layer {
   bindings = <
-  &none  &kp ESC   &kp HOME &kp UP   &kp END   &kp PG_UP      &none  &none  &none  &none  &none &none
+  &none  &none     &kp HOME &kp UP   &kp END   &kp PG_UP      &none  &none  &none  &none  &none &none
   &none  &none     &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN      &none  &kp RSHIFT &kp RCTRL &kp RALT  &kp RGUI &none
   &none  &kp K_APP &none    &none    &none     &kp INS        &none  &none  &none  &none  &none &none
                             &kp CAPS &kp DEL   &none          &none  &none  &none
@@ -173,14 +173,14 @@ keymap {
   };
 
 // ----------------------------------------------------------------------------------------
-// boot XX    XX    XX    XX    XX        XX   XX    XX    XX   XX   boot
+// boot XX    XX    XX    XX    XX        caps   XX    XX    XX   XX   boot
 // --   win   alt   ctrl  shift XX        bt0  bt1   bt2   bt3  bt4  bclr
 // --   XX    XX    XX    XX    XX        XX   XX    XX    XX   XX   --
 //                  XX    XX    XX        enter space  tab
 // ----------------------------------------------------------------------------------------
   misc_layer {
   bindings = <
-  &bootloader &none    &none    &none     &none      &none     &none         &none         &none         &none      &none         &bootloader
+  &bootloader  &none      &none     &none      &kp ESC   &none     &none         &none         &none         &none      &none         &bootloader
   &none &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
   &none &none    &none    &none     &none      &none     &none         &none         &none         &none      &none         &none
                           &none     &none      &none     &kp RET    &kp SPACE    &kp TAB
