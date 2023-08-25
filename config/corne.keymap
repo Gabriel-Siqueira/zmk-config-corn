@@ -99,14 +99,14 @@ keymap {
 
 // ----------------------------------------------------------------------------------------
 // --   "    '    `    ^    ~         XX   XX    XX    XX    XX   --
-// esc  [    ]    {    }    /         XX   shift ctrl  alt   win  --
+// esc  [    ]    {    }    \         XX   shift ctrl  alt   win  --
 // --   !    ?    ;    :    _         XX   XX    XX    XX    XX   --
 //            esc    del   --         XX   XX    XX
 // ----------------------------------------------------------------------------------------
   sym1_layer {
   bindings = <
   &none    &kp DQT   &kp SQT   &kp GRAVE  &kp CARET  &kp TILDE      &none  &none  &none  &none  &none &none
-  &kp CAPS &kp LBKT  &kp RBKT  &kp LBRC   &kp RBRC   &kp FSLH       &none  &kp RSHIFT &kp RCTRL &kp RALT  &kp RGUI &none
+  &kp CAPS &kp LBKT  &kp RBKT  &kp LBRC   &kp RBRC   &kp BSLH       &none  &kp RSHIFT &kp RCTRL &kp RALT  &kp RGUI &none
   &none    &kp EXCL  &kp QMARK &kp SEMI   &kp COLON &kp UNDER       &none  &none  &none  &none  &none &none
                                &kp CAPS   &kp DEL        &none      &none  &none  &none
   >;
@@ -114,14 +114,14 @@ keymap {
 
 // ----------------------------------------------------------------------------------------
 // --   XX    XX    XX    XX    XX        |    &    #    @    $   --
-// esc  win   alt   ctrl  shift XX        \    (    )    <    >   --
+// esc  win   alt   ctrl  shift XX        /    (    )    <    >   --
 // --   XX    XX    XX    XX    XX        -    *    +    =    %   --
 //                  XX    XX    XX        enter  space  tab
 // ----------------------------------------------------------------------------------------
   sym2_layer {
   bindings = <
   &none    &none    &none    &none     &none      &none    &kp PIPE  &kp AMPS  &kp HASH  &kp AT    &kp DLLR &none
-  &kp CAPS &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none    &kp BSLH  &kp LPAR  &kp RPAR  &kp LT    &kp GT   &none
+  &kp CAPS &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none    &kp FSLH  &kp LPAR  &kp RPAR  &kp LT    &kp GT   &none
   &none    &none    &none    &none     &none      &none    &kp MINUS &kp STAR  &kp PLUS  &kp EQUAL &kp PRCNT &none
                                       &none &none &none    &kp RET   &kp SPACE  &kp TAB
   >;
@@ -129,14 +129,14 @@ keymap {
 
 // ----------------------------------------------------------------------------------------
 // --   XX     XX     XX      XX       XX         +     1     2    3    *   bri_up
-// esc  win    alt    ctrl    shift    XX         \     4     5    6    =   bri_dn
+// esc  win    alt    ctrl    shift    XX         /     4     5    6    =   bri_dn
 // --   XX     XX     XX      XX       XX         -     7     8    9    %   --
 //                    XX      XX       XX         .     0     ,
 // ----------------------------------------------------------------------------------------
   num_layer {
   bindings = <
   &none    &none    &none     &none     &none      &none    &kp PLUS   &kp N1  &kp N2  &kp N3  &kp STAR &kp C_BRI_UP
-  &kp CAPS &kp LGUI &kp LALT  &kp LCTRL &kp LSHIFT &none    &kp BSLH   &kp N4  &kp N5  &kp N6  &kp EQUAL &kp C_BRI_DN
+  &kp CAPS &kp LGUI &kp LALT  &kp LCTRL &kp LSHIFT &none    &kp FSLH   &kp N4  &kp N5  &kp N6  &kp EQUAL &kp C_BRI_DN
   &none    &none    &none     &none     &none      &none    &kp MINUS  &kp N7  &kp N8  &kp N9  &kp PRCNT &none
                                      &none  &none  &none    &kp DOT &kp N0  &kp COMMA
   >;
