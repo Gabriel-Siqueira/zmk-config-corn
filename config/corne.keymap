@@ -98,14 +98,14 @@ keymap {
   };
 
 // ----------------------------------------------------------------------------------------
-// --   "    '    `    ^    ~         XX   XX    XX    XX    XX   --
+// --   '    "    `    ^    ~         XX   XX    XX    XX    XX   --
 // esc  [    ]    {    }    \         XX   shift ctrl  alt   win  --
 // --   !    ?    ;    :    _         XX   XX    XX    XX    XX   --
 //            esc    del   --         XX   XX    XX
 // ----------------------------------------------------------------------------------------
   sym1_layer {
   bindings = <
-  &none    &kp DQT   &kp SQT   &kp GRAVE  &kp CARET  &kp TILDE      &none  &none  &none  &none  &none &none
+  &none    &kp SQT   &kp DQT   &kp GRAVE  &kp CARET  &kp TILDE      &none  &none  &none  &none  &none &none
   &kp CAPS &kp LBKT  &kp RBKT  &kp LBRC   &kp RBRC   &kp BSLH       &none  &kp RSHIFT &kp RCTRL &kp RALT  &kp RGUI &none
   &none    &kp EXCL  &kp QMARK &kp SEMI   &kp COLON &kp UNDER       &none  &none  &none  &none  &none &none
                                &kp CAPS   &kp DEL        &none      &none  &none  &none
