@@ -196,9 +196,9 @@ keymap {
 // ----------------------------------------------------------------------------------------
   game_layer {
   bindings = <
-  &trans &kp N1  &kp Q  &kp W  &kp E  &kp R     &trans  &trans  &trans  &trans  &trans  &trans
-  &trans &kp N2  &kp A  &kp S  &kp D  &kp F     &trans  &trans  &trans  &trans  &trans  &trans
-  &trans &kp N3  &kp Z  &kp X  &kp C  &kp V     &trans  &trans  &trans  &trans  &trans  &trans
+  &trans &kp N1  &kp Q  &kp W  &kp E  &kp R     &kp T    &kp UP   &kp I     &kp O  &kp P  &trans
+  &trans &kp N2  &kp A  &kp S  &kp D  &kp F     &kp LEFT &kp DOWN &kp RIGHT &kp H  &kp L  &trans
+  &trans &kp N3  &kp Z  &kp X  &kp C  &kp V     &kp G    &kp B    &kp N     &kp M  &kp K  &trans
                &kp LSHIFT  &kp SPACE  &none     &kp RET    &kp SPACE    &kp TAB
   >;
   };
