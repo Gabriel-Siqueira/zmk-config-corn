@@ -189,17 +189,17 @@ keymap {
   };
 
 // ----------------------------------------------------------------------------------------
-// --   1    Q    W    E    R        --   --   --   --  --  --
-// --   2    A    S    D    F        --   --   --   --  --  --
+// --   1    Q    W    E    R        T    UP    I     O --  --
+// --   2    A    S    D    F        LEFT DOWN  RIGHT H --  --
 // --   3    Z    X    C    V        --   --   --   --  --  --
 //            Shift  SPC    X        -- --  --
 // ----------------------------------------------------------------------------------------
   game_layer {
   bindings = <
-  &trans &kp N1  &kp Q  &kp W  &kp E  &kp R     &kp T    &kp UP   &kp I     &kp O  &kp P  &trans
-  &trans &kp N2  &kp A  &kp S  &kp D  &kp F     &kp LEFT &kp DOWN &kp RIGHT &kp H  &kp L  &trans
-  &trans &kp N3  &kp Z  &kp X  &kp C  &kp V     &kp G    &kp B    &kp N     &kp M  &kp K  &trans
-               &kp LSHIFT  &kp SPACE  &none     &kp RET    &kp SPACE    &kp TAB
+  &trans     &kp H  &kp Q  &kp W  &kp E  &kp R     &kp T   &kp Y    &kp UP    &kp U     &kp I  &RGUI
+  &trans     &kp J  &kp A  &kp S  &kp D  &kp F     &kp G   &kp LEFT &kp DOWN  &kp RIGHT &kp L  &LALT
+  &kp LSHIFT &kp K  &kp Z  &kp X  &kp C  &kp V     &kp B   &kp N    &kp M     &kp O     &kp P  &RCTRL
+                      &trans &trans &trans     &trans &trans &trans
   >;
   };
 
