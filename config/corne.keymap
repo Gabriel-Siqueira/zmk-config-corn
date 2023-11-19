@@ -196,10 +196,10 @@ keymap {
 // ----------------------------------------------------------------------------------------
   game_layer {
   bindings = <
-  &trans     &kp H  &kp Q  &kp W  &kp E  &kp R     &kp T   &kp Y    &kp UP    &kp U     &kp I  &kp RGUI
-  &trans     &kp J  &kp A  &kp S  &kp D  &kp F     &kp G   &kp LEFT &kp DOWN  &kp RIGHT &kp L  &kp LALT
-  &kp LSHIFT &kp K  &kp Z  &kp X  &kp C  &kp V     &kp B   &kp N    &kp M     &kp O     &kp P  &kp RCTRL
-                          &trans &trans &trans     &trans &trans &trans
+  &tog GAME       &kp H  &kp Q  &kp W  &kp E  &kp R     &kp T   &kp Y    &kp UP    &kp U     &kp I  &kp RGUI
+  &lt  LFUN CAPS  &kp J  &kp A  &kp S  &kp D  &kp F     &kp G   &kp LEFT &kp DOWN  &kp RIGHT &kp L  &kp LALT
+  &kp LSHIFT      &kp K  &kp Z  &kp X  &kp C  &kp V     &kp B   &kp N    &kp M     &kp O     &kp P  &kp RCTRL
+             &lt LSYM2 CAPS  &lt LNUM BSPC    &none     &kp RET  &lt LNAV SPACE   &lt LSYM1 TAB
   >;
   };
 
